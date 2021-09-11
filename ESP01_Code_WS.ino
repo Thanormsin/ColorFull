@@ -71,8 +71,8 @@ int x;
 //### Wifi ##################
 String SSID       = "";
 String PASSWORD = "";
-String SSIDNm       = "duco-mikrotik";  //<-- ใส่ชือ User Name ตรงนี
-String Pwd          = "1234567890"; //<-- ใส่ชือ RigName ตรงนี
+String SSIDNm       = "Tha6-2.4G";  //<-- ใส่ชือ User Name ตรงนี
+String Pwd          = "0819065291"; //<-- ใส่ชือ RigName ตรงนี
 
 String eeprom_ssid;
 String eeprom_pwd;
@@ -611,8 +611,8 @@ void setup() {
 
    
   //ทำการตรวจสอบ ข้อมูล Wifi Setting
-//  if (String(eeprom_acct).equals(String(AcctName))){
-  if (String(eeprom_ssid).equals(String(SSIDNm))){
+//  if (String(eeprom_acct).equals(String(AcctName))){ //AcctName.length()
+  if (eeprom_ssid.length()!=0){
     // อ่าน AcctNm
     GetSSID();   
     // อ่าน BrdNm
